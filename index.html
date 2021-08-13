@@ -10,62 +10,62 @@
   <body>
 
     <!-- nav bar -->
-    <div class="mt-5 mx-auto w-9/12 h-9 flex justify-end">
-      <ul class="w-1/4 flex justify-around text-xl font-bold text-gray-800">
-        <li class="px-1"><a href="#">Works</a></li>
+    <div class="mt-5 mx-auto w-9/12 h-9 flex md:justify-end">
+      <ul class="w-full md:w-1/4 flex justify-around text-2xl font-bold text-gray-800 ">
+        <li class="px-1 "><a href="#">Works</a></li>
         <li class="px-1"><a href="#">About</a></li>
         <li class="px-1"><a href="#">Contact</a></li>
       </ul>
     </div>
 
     <!-- hero -->
-    <div class="w-9/12 mx-auto flex justify-around mt-20 mb-20">
-      <div class="flex-1 p-2">
-        <h1 class="mt-5 text-6xl font-extrabold text-gray-900">
+    <div class="w-9/12 mx-auto flex flex-col lg:flex-row justify-center items-center lg:justify-around mt-20 mb-20 ">
+      <div class="flex-1 p-2 justify-center text-center lg:text-left z-10">
+        <h1 class="mt-5 text-5xl lg:text-6xl font-extrabold text-gray-900">
           I'm Spike Vinz Cruz
         </h1>
-        <h3 class="mt-5 text-4xl font-bold text-gray-700">
+        <h3 class="mt-5 text-2xl lg:text-4xl font-bold text-gray-700">
           Web Developer
         </h3>
-        <p class="mt-5 text-2xl font font-light">
+        <p class="mt-5 text-xl lg:text-2xl font font-light">
           I'm an aspiring Full-stack web developer from the Philippines. I found excitement and happiness when I'm building websites and learning how to code.
         </p>
-        <div class="mt-5">
-          <a href="#" class="px-5 py-3 bg-red-500 text-white inline-block">Download Resume</a>
+        <div class="mt-5 mx-auto">
+          <a href="#" class="px-3 py-2 lg:px-5 lg:py-3 bg-red-500 text-white inline-block">Download Resume</a>
         </div>
       </div>
-      <div class="w-1/3 flex justify-end items-center">
-        <div class="h-60 w-60 bg-black rounded-full border-8 border-red-500">
-          <img class="h-full w-full rounded-full" src="./img/nawong.png" alt="">
+      <div class="w-4/6 md:w-1/2 lg:w-1/3 flex justify-end items-center order-first lg:order-last">
+        <div class="lg:h-60 lg:w-60 bg-black rounded-full border-8 border-red-500">
+          <img class="lg:h-full lg:w-full rounded-full" src="./img/nawong.png" alt="">
         </div>
       </div>
     </div>
 
     <!-- projects -->
     <div class="bg-blue-50 pb-8">
-      <h1 class="text-center text-gray-900 text-6xl p-4 font-bold">Projects</h1>
+      <h1 class="text-gray-900 text-6xl p-4 font-bold text-center ">Projects</h1>
 
       <!-- flex container -->
       <div class="w-9/12 mx-auto mt-10 flex flex-col">
          
       <div class="bg-gray-300 h-px w-4/5 my-10 mx-auto"></div>
 
-        <div class="flex ">
-          <div class="h-64 w-96 flex-none shadow-xl">
+        <div class="flex flex-col lg:flex-row ">
+          <div class="lg:h-64 lg:w-96 flex-none shadow-xl mb-1">
             <img src="./img/thumbnail-fakebook.png" alt="" class="w-full h-full object-scale-down position-center">
           </div>
 
-          <div class="pl-5 flex flex-col justify-between">
-            <h1 class="text-4xl font-semibold text-gray-800">FakeBook</h1>
-            <div class="flex">
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2">Ruby on Rails</div>
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2">Tailwind CSS</div>
+          <div class="lg:pl-5 flex flex-col lg:justify-between">
+            <h1 class="text-4xl font-semibold text-gray-800 my-2">FakeBook</h1>
+            <div class="flex ">
+              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2 my-2">Ruby on Rails</div>
+              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2 my-2">Tailwind CSS</div>
             </div>
-            <p class="text-gray-800">
+            <p class="text-gray-800 my-2">
               A not so good facebook clone with authentication, Basic CRUD operations for posts, comments and users. It also has 
               facebook Oauth and Tailwind css. I had fun buliding this and learn all the basics in rails.
             </p>
-            <div class="flex">
+            <div class="flex my-2">
               <a href="https://spike-fakebook.herokuapp.com/" class="py-2 px-3 bg-red-500 text-white font-semibold rounded-full">View Project</a>
               <a href="https://github.com/superspike7/FacebookClone" class="py-2 px-3 bg-red-500 text-white font-semibold rounded-full ml-5">Source Code</a>
             </div>
@@ -74,114 +74,43 @@
 
       <div class="bg-gray-300 h-px w-4/5 my-10 mx-auto"></div>
 
-        <div class="flex ">
-          <div class="h-64 w-96 flex-none shadow-xl">
+        <div class="flex flex-col lg:flex-row">
+          <div class="lg:h-64 lg:w-96 flex-none shadow-xl mb-1">
             <img src="./img/thumbnail-tictactoejs.png" alt="" class="w-full h-full object-scale-down position-center">
           </div>
 
           <div class="pl-5 flex flex-col justify-between">
-            <h1 class="text-4xl font-semibold text-gray-800">Tic Tac Toe Js</h1>
+            <h1 class="text-4xl font-semibold text-gray-800 my-2">Tic Tac Toe Js</h1>
             <div class="flex">
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2">Vanilla Javascript</div>
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2">Tailwind CSS</div>
+              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2 my-2">Vanilla Javascript</div>
+              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2 my-2">Tailwind CSS</div>
             </div>
-            <p class="text-gray-800">
+            <p class="text-gray-800 my-2">
               The good ol' tic tac toe game built with vanilla javascript and Tailwind. In this project I learned how to
               use module pattern for organizing code.
             </p>
-            <div class="flex">
+            <div class="flex my-2">
               <a href="https://superspike7.github.io/tic-tac-toe-js/" class="py-2 px-3 bg-red-500 text-white font-semibold rounded-full">View Project</a>
               <a href="https://github.com/superspike7/tic-tac-toe-js" class="py-2 px-3 bg-red-500 text-white font-semibold rounded-full ml-5">Source Code</a>
             </div>
           </div>
         </div>
 
-         
       <div class="bg-gray-300 h-px w-4/5 my-10 mx-auto"></div>
 
-        <div class="flex ">
-          <div class="h-64 w-96 flex-none shadow-xl">
-            <img src="./img/thumbnail-library.png" alt="" class="w-full h-full object-scale-down position-center">
-          </div>
-
-          <div class="pl-5 flex flex-col justify-between">
-            <h1 class="text-4xl font-semibold text-gray-800">Book Library</h1>
-            <div class="flex">
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2">Vanilla Javascript</div>
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2">Tailwind CSS</div>
-            </div>
-            <p class="text-gray-800">
-              A very simple Book library project that has a basic CRUD functionality. I learned how to use factory functions
-              and ES6 class with this project. 
-            </p>
-            <div class="flex">
-              <a href="https://superspike7.github.io/library_project_js/" class="py-2 px-3 bg-red-500 text-white font-semibold rounded-full">View Project</a>
-              <a href="https://github.com/superspike7/library_project_js" class="py-2 px-3 bg-red-500 text-white font-semibold rounded-full ml-5">Source Code</a>
-            </div>
-          </div>
-        </div>
-
-         
-      <div class="bg-gray-300 h-px w-4/5 my-10 mx-auto"></div>
-
-        <div class="flex ">
-          <div class="h-64 w-96 flex-none shadow-xl">
-            <img src="./img/thumbnail-tictactoeruby.png" alt="" class="w-full h-full object-scale-down position-center">
-          </div>
-
-          <div class="pl-5 flex flex-col justify-between">
-            <h1 class="text-4xl font-semibold text-gray-800">Tic Tac Toe Ruby</h1>
-            <div class="flex">
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm">Ruby</div>
-            </div>
-            <p class="text-gray-800">
-              A tic tac toe commandline game built with Ruby, my favorite language. I learned and implemented OOP in this project.
-            </p>
-            <div class="flex">
-              <a href="https://replit.com/@superspike7/tictactoe" class="py-2 px-3 bg-red-500 text-white font-semibold rounded-full">View Project</a>
-              <a href="https://github.com/superspike7/tic-tac-toe-ruby" class="py-2 px-3 bg-red-500 text-white font-semibold rounded-full ml-5">Source Code</a>
-            </div>
-          </div>
-        </div>
-
-      <div class="bg-gray-300 h-px w-4/5 my-10 mx-auto"></div>
-
-        <div class="flex ">
-          <div class="h-64 w-96 flex-none shadow-xl">
-            <img src="./img/thumbnail-mastermindrb.png" alt="" class="w-full h-full object-scale-down position-center">
-          </div>
-
-          <div class="pl-5 flex flex-col justify-between">
-            <h1 class="text-4xl font-semibold text-gray-800">Mastermind</h1>
-            <div class="flex">
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm">Ruby</div>
-            </div>
-            <p class="text-gray-800">
-              A mastermind commandline game using Ruby. Another project where I implemented and learned OOP principles.
-            </p>
-            <div class="flex">
-              <a href="https://replit.com/@superspike7/Mastermind" class="py-2 px-3 bg-red-500 text-white font-semibold rounded-full">View Project</a>
-              <a href="https://github.com/superspike7/Mastermind-ruby" class="py-2 px-3 bg-red-500 text-white font-semibold rounded-full ml-5">Source Code</a>
-            </div>
-          </div>
-        </div>
-
-
-      <div class="bg-gray-300 h-px w-4/5 my-10 mx-auto"></div>
-
-        <div class="flex ">
-          <div class="h-64 w-96 flex-none shadow-xl">
+        <div class="flex flex-col lg:flex-row"> 
+          <div class="lg:h-64 lg:w-96 flex-none shadow-xl">
             <img src="./img/thumbnail-calculator.png" alt="" class="w-full h-full object-scale-down position-center">
           </div>
 
           <div class="pl-5 flex flex-col justify-between">
-            <h1 class="text-4xl font-semibold text-gray-800">Calculator</h1>
+            <h1 class="text-4xl font-semibold text-gray-800 my-2">Calculator</h1>
             <div class="flex">
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2">Vanilla Javascript</div>
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2">HTML</div>
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2">CSS</div>
+              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2 my-2">Vanilla Javascript</div>
+              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2 my-2">HTML</div>
+              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2 my-2">CSS</div>
             </div>
-            <p class="text-gray-800">
+            <p class="text-gray-800 my-2">
               A simple calculator built with javascript. Here I learned how to maniuplate the DOM.
             </p>
             <div class="flex">
@@ -191,31 +120,7 @@
           </div>
         </div>
 
-
       <div class="bg-gray-300 h-px w-4/5 my-10 mx-auto"></div>
-
-        <div class="flex ">
-          <div class="h-64 w-96 flex-none shadow-xl">
-            <img src="./img/thumbnail-etchascketch.png" alt="" class="w-full h-full object-scale-down position-center">
-          </div>
-
-          <div class="pl-5 flex flex-col justify-between">
-            <h1 class="text-4xl font-semibold text-gray-800">Etch a Sketch</h1>
-            <div class="flex">
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2">Vanilla Javascript</div>
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2">HTML</div>
-              <div class="py-1 px-2 bg-gray-700 text-white rounded-full text-sm mr-2">CSS</div>
-            </div>
-            <p class="text-gray-800">
-              A pixel drawing game using javascript DOM manipulation and CSS grid.
-            </p>
-            <div class="flex">
-              <a href="https://superspike7.github.io/etch-a-sketch/" class="py-2 px-3 bg-red-500 text-white font-semibold rounded-full">View Project</a>
-              <a href="https://github.com/superspike7/etch-a-sketch" class="py-2 px-3 bg-red-500 text-white font-semibold rounded-full ml-5">Source Code</a>
-            </div>
-          </div>
-        </div>
-
 
       </div>
     </div>
